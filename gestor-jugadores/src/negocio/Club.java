@@ -29,18 +29,14 @@ public class Club {
 	}
 
 	public void editarJugador(String identificaionJugador, String nuevoNombre, String nuevoIdentificacion, int nuevoPeso) {
-		int posicionJugador = -1;
 		for (int i = 0; i < this.jugadores.size(); i++) {
 			if (this.jugadores.get(i).identificacion.equals(identificaionJugador)) {
-				posicionJugador = i;
+				this.jugadores.get(i).nombre = nuevoNombre;
+				this.jugadores.get(i).identificacion = nuevoIdentificacion;
+				this.jugadores.get(i).peso = nuevoPeso;
+				return;
 			}
 		}
-		if (posicionJugador != -1) {
-			this.jugadores.get(posicionJugador).nombre = nuevoNombre;
-			this.jugadores.get(posicionJugador).identificacion = nuevoIdentificacion;
-			this.jugadores.get(posicionJugador).peso = nuevoPeso;
-		} else {
-			System.out.println("No se encontró el jugador");
-		}
+		System.out.println("No se encontró el jugador");
 	}
 }
