@@ -32,22 +32,17 @@ public class Club {
 		System.out.println("");
 	}
 
-<<<<<<< HEAD
 	public void editarJugador(String identificaionJugador, String nuevoNombre, String nuevoIdentificacion,
 			int nuevoPeso) {
 		int posicionJugador = 0;
-=======
-	public void editarJugador(String identificaionJugador, String nuevoNombre, String nuevoIdentificacion, int nuevoPeso) {
->>>>>>> 3eca05478a995cb100142a6f5de94bb271dedd25
 		for (int i = 0; i < this.jugadores.size(); i++) {
 			if (this.jugadores.get(i).identificacion.equals(identificaionJugador)) {
-				this.jugadores.get(i).nombre = nuevoNombre;
-				this.jugadores.get(i).identificacion = nuevoIdentificacion;
-				this.jugadores.get(i).peso = nuevoPeso;
-				return;
+				posicionJugador = i;
+				this.jugadores.get(posicionJugador).nombre = nuevoNombre;
+				this.jugadores.get(posicionJugador).identificacion = nuevoIdentificacion;
+				this.jugadores.get(posicionJugador).peso = nuevoPeso;
 			}
 		}
-		System.out.println("No se encontró el jugador");
 	}
 
 	public void eliminarJugador(String identificacion) {
