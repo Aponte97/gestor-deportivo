@@ -2,24 +2,23 @@ package negocio;
 
 import modelo.Entrenador;
 import modelo.Jugador;
+import modelo.Plan;
 
 import java.util.ArrayList;
 
 public class Club {
-
 	private ArrayList<Jugador> jugadores;
 	private ArrayList<Entrenador> entrenador;
+	private ArrayList<Plan> planes;
 
 	public Club() {
 		this.jugadores = new ArrayList<>();
 		this.entrenador = new ArrayList<>();
+		this.planes = new ArrayList<>();
 	}
 
 	public void crearJugador(String nombre, String identificacion, int peso) {
-		Jugador nuevoJugador = new Jugador();
-		nuevoJugador.setNombre(nombre);
-		nuevoJugador.setIdentificacion(identificacion);
-		nuevoJugador.setPeso(peso);
+		Jugador nuevoJugador = new Jugador(peso, nombre, identificacion);
 		jugadores.add(nuevoJugador);
 	}
 
@@ -106,5 +105,31 @@ public class Club {
 		}
 	}
 
+	// ******************** CRUD PLANES **************************
 
+	public void crearPlan(String identificador, String nombre, Double valor, int cantidadEntrenamientos) {
+		Plan plan = new Plan(identificador, nombre, valor, cantidadEntrenamientos);
+		this.planes.add(plan);
+	}
+
+	public void mostrarPlanes() {
+		System.out.println("------ PLANES DEL CLUB ------------");
+		for (Plan plan : planes) {
+			System.out.println("Identificador: " + plan.getIdentificador() + ", Nombre: " + plan.getNombre()
+				+ ", Valor: " + plan.getValor() + ", # Entrenamientos: " + plan.getCantidadEntrenamientos());
+		}
+		System.out.println("");
+	}
+
+	public void asociarPlan(String identificacionJugador, String identificadorPlan) {
+		for (int i = 0; i < this.jugadores.size(); i++) {
+			if (this.jugadores.get(i).getIdentificacion().equals(identificacionJugador)) {
+				for (int j = 0; j < this.planes.size(); j++) {
+					if (this.planes.get(j).getIdentificador().equals(identificadorPlan)) {
+						this.jugadores.get(i).setPlanAsociado(identificadorPlan);
+					}
+				}
+			}
+		}
+	}
 }

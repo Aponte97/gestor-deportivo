@@ -4,6 +4,13 @@ public class Jugador {
 	private int peso;
 	private String nombre;
 	private String identificacion;
+	private String planAsociado;
+
+	public Jugador(int peso, String nombre, String identificacion) {
+		setPeso(peso);
+		setNombre(nombre);
+		setIdentificacion(identificacion);
+	}
 
 	public int getPeso() {
 		return peso;
@@ -27,6 +34,14 @@ public class Jugador {
 
 	public void setIdentificacion(String identificacion) {
 		this.identificacion = identificacion;
+	}
+
+	public String getPlanAsociado() {
+		return planAsociado;
+	}
+
+	public void setPlanAsociado(String planAsociado) {
+		this.planAsociado = planAsociado;
 	}
 
 	@Override

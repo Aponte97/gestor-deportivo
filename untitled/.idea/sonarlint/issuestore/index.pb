@@ -13,3 +13,7 @@ M
 src/modelo/Entrenamiento.java,6\2\62c9ebe4e3db91430c2cddfe441abafa6623ff97
 J
 src/modelo/Entrenador.java,8\b\8b61a32164a8c4706d94e7af36db76803f90eaab
+D
+src/modelo/Plan.java,c\e\cef148839ab2c47f955390795fd0d01798a7969c
+M
+src/negocio/GestorPlanes.java,f\3\f39f3a4f43fa39556d0db96c3001438c5491141d

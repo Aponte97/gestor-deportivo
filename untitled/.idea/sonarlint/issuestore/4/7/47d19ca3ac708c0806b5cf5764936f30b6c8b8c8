@@ -1,13 +1,16 @@
 
-m	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¯Èà8ğÌşÙÆ1
-G	java:S106"+Replace this use of System.out by a logger.(î°¸Ê8€ÍşÙÆ1
-L	java:S106"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8ÍşÙÆ1
-L	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8ÍşÙÆ1
-G	java:S106+"+Replace this use of System.out by a logger.(»Í8‚ÍşÙÆ1
-G	java:S1064"+Replace this use of System.out by a logger.(ŸÈŠë8„ÍşÙÆ1
-L	java:S1066"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8…ÍşÙÆ1
-L	java:S106<"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8…ÍşÙÆ1
-G	java:S106L"+Replace this use of System.out by a logger.(ûŠòß8…ÍşÙÆ1
+m	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¯Èà8•Ó ÜÆ1
+G	java:S106"+Replace this use of System.out by a logger.(î°¸Ê8´Ó ÜÆ1
+L	java:S106"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8´Ó ÜÆ1
+L	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8µÓ ÜÆ1
+G	java:S106*"+Replace this use of System.out by a logger.(»Í8·Ó ÜÆ1
+G	java:S1063"+Replace this use of System.out by a logger.(ŸÈŠë8ÃÓ ÜÆ1
+L	java:S1065"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8ÄÓ ÜÆ1
+L	java:S106;"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8ÄÓ ÜÆ1
+G	java:S106K"+Replace this use of System.out by a logger.(ûŠòß8ÆÓ ÜÆ1
 `
-java:S1117N">Rename "entrenador" which hides the field declared at line 11.(é‡¦ìûÿÿÿÿ8‡ÍşÙÆ1
-L	java:S106O"+Replace this use of System.out by a logger.(›¥¼Éüÿÿÿÿ8‡ÍşÙÆ1
+java:S1117M">Rename "entrenador" which hides the field declared at line 11.(é‡¦ìûÿÿÿÿ8ÒÓ ÜÆ1
+L	java:S106N"+Replace this use of System.out by a logger.(›¥¼Éüÿÿÿÿ8ÒÓ ÜÆ1
+G	java:S106t"+Replace this use of System.out by a logger.(ëºìš8âÓ ÜÆ1
+L	java:S106v"+Replace this use of System.out by a logger.(úÍÄ¡ùÿÿÿÿ8âÓ ÜÆ1
+L	java:S106y"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8ñÓ ÜÆ1
