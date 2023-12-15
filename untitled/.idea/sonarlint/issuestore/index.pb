@@ -9,3 +9,7 @@ P
  src/negocio/Club_BACKUP_386.java,a\f\afc2a444b23d70478773a77158039e536c0bf7cf
 O
 src/negocio/Club_LOCAL_386.java,5\7\5762a7ac55dbf2e246e8a3ddf86afc4501abe7b5
+M
+src/modelo/Entrenamiento.java,6\2\62c9ebe4e3db91430c2cddfe441abafa6623ff97
+J
+src/modelo/Entrenador.java,8\b\8b61a32164a8c4706d94e7af36db76803f90eaab

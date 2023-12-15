@@ -1,13 +1,32 @@
 package modelo;
 
 public class Jugador {
-	public int peso;
-	public String nombre;
-	public String identificacion;
+	private int peso;
+	private String nombre;
+	private String identificacion;
 
-	// Constructor
-	public Jugador(){
-		//	System.out.println("Estan quieriendo crear un jugador");
+	public int getPeso() {
+		return peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getIdentificacion() {
+		return identificacion;
+	}
+
+	public void setIdentificacion(String identificacion) {
+		this.identificacion = identificacion;
 	}
 
 	@Override
