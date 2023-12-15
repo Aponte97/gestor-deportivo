@@ -12,7 +12,7 @@ public class Jugador {
 
 	@Override
 	public String toString() {
-		return "- Nombre: " + nombre +
+		return " Nombre: " + nombre +
 			", Identificacion: " + identificacion +
 			", Peso: " + peso;
 	}

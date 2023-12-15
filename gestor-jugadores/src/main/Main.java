@@ -19,5 +19,17 @@ public class Main {
 
         club.editarJugador("123442345", "Gerardo Aponte", "98752634", 80);
         club.mostrarJugadores();
+        club.eliminarJugador("923817641");
+        
+        club.crearEntrenador("Jorge", 2455665, "futbol", "Colombia ", 2000000);
+        club.crearEntrenador("Daniel", 565665, "tenis", "Colombia ", 1500000);
+        club.crearEntrenador("Carlos", 3055965, "futbol sala", "Colombia ", 1250000);
+        
+        club.mostrarEntrenador();
+        club.editarEntrenador(3055965, "David ",294303, "beisbol", "Ecuador", 2150000);
+        club.mostrarEntrenador();
+        club.eliminarEntrenador(2455665);
+        club.mostrarEntrenador();
+
     }
 }
