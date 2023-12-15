@@ -1,5 +1,13 @@
 
-G	java:S106"+Replace this use of System.out by a logger.(î°¸Ê8€×æ¿Ã1
-L	java:S106"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8×æ¿Ã1
-L	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8ƒ×æ¿Ã1
-G	java:S106("+Replace this use of System.out by a logger.(»Í8‡×æ¿Ã1
+m	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¯Èà8’ÍÁÙÆ1
+G	java:S106"+Replace this use of System.out by a logger.(î°¸Ê8²ÍÁÙÆ1
+L	java:S106"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8³ÍÁÙÆ1
+L	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8³ÍÁÙÆ1
+G	java:S106+"+Replace this use of System.out by a logger.(»Í8´ÍÁÙÆ1
+G	java:S1064"+Replace this use of System.out by a logger.(ŸÈŠë8¶ÍÁÙÆ1
+L	java:S1066"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8·ÍÁÙÆ1
+L	java:S106<"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ8·ÍÁÙÆ1
+G	java:S106L"+Replace this use of System.out by a logger.(ûŠòß8»ÍÁÙÆ1
+`
+java:S1117N">Rename "entrenador" which hides the field declared at line 11.(é‡¦ìûÿÿÿÿ8»ÍÁÙÆ1
+L	java:S106O"+Replace this use of System.out by a logger.(›¥¼Éüÿÿÿÿ8¼ÍÁÙÆ1

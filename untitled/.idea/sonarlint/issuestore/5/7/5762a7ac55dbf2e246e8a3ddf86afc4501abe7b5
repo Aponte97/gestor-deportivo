@@ -1,0 +1,12 @@
+
+f	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¯Èà
+@	java:S106"+Replace this use of System.out by a logger.(î°¸Ê
+E	java:S106"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ
+E	java:S106 "+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ
+@	java:S1066"+Replace this use of System.out by a logger.(ŸÈŠë
+E	java:S1068"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ
+E	java:S106>"+Replace this use of System.out by a logger.(¼şÑãøÿÿÿÿ
+@	java:S106N"+Replace this use of System.out by a logger.(ûŠòß
+Y
+java:S1117P">Rename "entrenador" which hides the field declared at line 12.(é‡¦ìûÿÿÿÿ
+E	java:S106Q"+Replace this use of System.out by a logger.(›¥¼Éüÿÿÿÿ

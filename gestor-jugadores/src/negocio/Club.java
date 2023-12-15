@@ -4,7 +4,6 @@ import modelo.Entrenador;
 import modelo.Jugador;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Club {
 
@@ -32,13 +31,7 @@ public class Club {
 		System.out.println("");
 	}
 
-<<<<<<< HEAD
-	public void editarJugador(String identificaionJugador, String nuevoNombre, String nuevoIdentificacion,
-			int nuevoPeso) {
-		int posicionJugador = 0;
-=======
 	public void editarJugador(String identificaionJugador, String nuevoNombre, String nuevoIdentificacion, int nuevoPeso) {
->>>>>>> 3eca05478a995cb100142a6f5de94bb271dedd25
 		for (int i = 0; i < this.jugadores.size(); i++) {
 			if (this.jugadores.get(i).identificacion.equals(identificaionJugador)) {
 				this.jugadores.get(i).nombre = nuevoNombre;
@@ -69,7 +62,7 @@ public class Club {
 	}
 
 	public void crearEntrenador(String nombre, long numeroIde, String deporteQueInstruye, String Nacionalidad,
-			int salario) {
+								int salario) {
 		Entrenador nuevoEntrenador = new Entrenador();
 		nuevoEntrenador.nombre = nombre;
 		nuevoEntrenador.numeroIdentificacion = numeroIde;
@@ -89,7 +82,7 @@ public class Club {
 	}
 
 	public void editarEntrenador(long identificador, String nuevoNombre, long nuevoIde, String nuevoDeporte,
-			String nuevaNacionalidad, int nuevoSalario) {
+								 String nuevaNacionalidad, int nuevoSalario) {
 		int pocicion = -1;
 		for (int i = 0; i < this.entrenador.size(); i++) {
 			if (this.entrenador.get(i).numeroIdentificacion == identificador) {
@@ -102,14 +95,16 @@ public class Club {
 			}
 		}
 	}
-	 
+
 	public void eliminarEntrenador(long identificacion) {
 		int posicion = -1;
-		for(int i = 0 ; i < this.entrenador.size(); i++ ) {
+		for (int i = 0; i < this.entrenador.size(); i++) {
 			if (this.entrenador.get(i).numeroIdentificacion == identificacion) {
 				posicion = i;
 				entrenador.remove(posicion);
 			}
 		}
 	}
+
+
 }
