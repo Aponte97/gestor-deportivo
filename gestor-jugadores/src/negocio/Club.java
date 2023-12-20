@@ -30,7 +30,8 @@ public class Club {
 		System.out.println("");
 	}
 
-	public void editarJugador(String identificaionJugador, String nuevoNombre, String nuevoIdentificacion, int nuevoPeso) {
+	public void editarJugador(String identificaionJugador, String nuevoNombre, String nuevoIdentificacion,
+			int nuevoPeso) {
 		for (int i = 0; i < this.jugadores.size(); i++) {
 			if (this.jugadores.get(i).getIdentificacion().equals(identificaionJugador)) {
 				this.jugadores.get(i).setNombre(nuevoNombre);
@@ -61,7 +62,7 @@ public class Club {
 	}
 
 	public void crearEntrenador(String nombre, long numeroIde, String deporteQueInstruye, String Nacionalidad,
-								int salario) {
+			int salario) {
 		Entrenador nuevoEntrenador = new Entrenador();
 		nuevoEntrenador.setNombre(nombre);
 		nuevoEntrenador.setNumeroIdentificacion(numeroIde);
@@ -81,7 +82,7 @@ public class Club {
 	}
 
 	public void editarEntrenador(long identificador, String nuevoNombre, long nuevoIde, String nuevoDeporte,
-								 String nuevaNacionalidad, int nuevoSalario) {
+			String nuevaNacionalidad, int nuevoSalario) {
 		int pocicion = -1;
 		for (int i = 0; i < this.entrenador.size(); i++) {
 			if (this.entrenador.get(i).getNumeroIdentificacion() == identificador) {
@@ -116,7 +117,7 @@ public class Club {
 		System.out.println("------ PLANES DEL CLUB ------------");
 		for (Plan plan : planes) {
 			System.out.println("Identificador: " + plan.getIdentificador() + ", Nombre: " + plan.getNombre()
-				+ ", Valor: " + plan.getValor() + ", # Entrenamientos: " + plan.getCantidadEntrenamientos());
+					+ ", Valor: " + plan.getValor() + ", # Entrenamientos: " + plan.getCantidadEntrenamientos());
 		}
 		System.out.println("");
 	}
@@ -131,5 +132,30 @@ public class Club {
 				}
 			}
 		}
+	}
+
+	public void mostrarPlanJugador (String identificacionJugador) {
+		String nombreJugador ;
+		String identificacionDelJugador = null ;
+		String identificadorPlan ;
+		String nombrePlan;
+		double valorPlan;
+		int entrenamientos;
+		System.out.println("------------ JUGADOR POR PLAN -----------------");
+	for (int i = 0; i < jugadores.size(); i++) {
+		for( Plan plan : planes) {
+		identificadorPlan =	plan.getIdentificador();
+			if (this.jugadores.get(i).getIdentificacion().equalsIgnoreCase(identificacionJugador) ) {	
+					if (this.jugadores.get(i).getPlanAsociado().equalsIgnoreCase(identificadorPlan)) {
+		nombreJugador =	this.jugadores.get(i).getNombre(); 
+		identificacionDelJugador =	this.jugadores.get(i).getIdentificacion(); 
+		nombrePlan = plan.getNombre();
+		valorPlan = plan.getValor();
+		entrenamientos = plan.getCantidadEntrenamientos();
+		System.out.println("NOMBRE:"+ nombreJugador +" \t IDENTIFICACION JUGADOR:"+ identificacionDelJugador+ " \t NOMBRE PLAN:"+ nombrePlan + "\t VALOR PLAN:"+valorPlan + "\tNUMERO ENTRENAMIENTO:"+entrenamientos);
+			}
+		}
+	}}
+	
 	}
 }

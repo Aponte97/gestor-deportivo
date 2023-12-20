@@ -12,6 +12,10 @@ public class Jugador {
 		setIdentificacion(identificacion);
 	}
 
+	public Jugador() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getPeso() {
 		return peso;
 	}
@@ -46,8 +50,9 @@ public class Jugador {
 
 	@Override
 	public String toString() {
-		return " Nombre: " + nombre +
-			", Identificacion: " + identificacion +
-			", Peso: " + peso;
+		return "Jugador [peso=" + peso + ", nombre=" + nombre + ", identificacion=" + identificacion + ", planAsociado="
+				+ planAsociado + "]";
 	}
+
+	
 }

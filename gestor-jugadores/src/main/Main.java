@@ -5,7 +5,7 @@ import negocio.Club;
 public class Main {
 	public static void main(String[] args) {
 		Club club = new Club();
-		club.crearJugador("Martha Aponte", "1239847612", 60);
+		club.crearJugador("Elena Aponte", "1239847612", 60);
 		club.crearJugador("William Cuervo", "923817641", 54);
 		club.crearJugador("Fabian Aponte", "12893712", 65);
 		club.crearJugador("Cristian Cuervo", "92386721", 70);
@@ -30,5 +30,8 @@ public class Main {
 		club.crearPlan("A1", "Futbol 5 Principiantes", 80000.0, 10);
 		club.crearPlan("A2", "Futbol Senior", 300000.0, 20);
 		club.mostrarPlanes();
+		club.asociarPlan("92386721", "A1");
+		club.mostrarJugadores();
+		club.mostrarPlanJugador("92386721");
 	}
 }
